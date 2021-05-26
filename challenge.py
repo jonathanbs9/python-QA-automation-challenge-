@@ -124,6 +124,9 @@ print(df)
 # Excel file
 writer = pd.ExcelWriter('challenge_tabla_posiciones.xlsx')
 df.to_excel(writer, 'Torneo futbol argentino', index=False)
+
+# CSV file
+#df.to_csv('challenge_equipos.csv', index = False)
 writer.save()
 #print('Datos exportados!')
 driver.quit()
