@@ -116,18 +116,18 @@ df = pd.DataFrame({
     'DIF':diferencia_goles, 
     'PTS':puntos 
 })
-print(df)
-#df.drop('PTS', inplace=True, axis=1)
-#df.drop(index=None)
 #print(df)
 
 # Excel file
 writer = pd.ExcelWriter('challenge_tabla_posiciones.xlsx')
 df.to_excel(writer, 'Torneo futbol argentino', index=False)
 
-# CSV file
+# If you want a CSV file
 #df.to_csv('challenge_equipos.csv', index = False)
+
+# Save xlsx file
 writer.save()
-#print('Datos exportados!')
+
+print('Datos exportados!')
 driver.quit()
     

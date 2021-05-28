@@ -2,7 +2,7 @@
 
 🚀 Challenge:
 
-Dada la siguiente página, se necesita obtener la tabla de las posiciones del torneo actual del futbol argentino. Se debe generar un archivo excel para porder almacenar dicha tabla.
+Dada la siguiente página, se necesita obtener la tabla de las posiciones del torneo actual del futbol argentino. Se debe generar un archivo excel para poder almacenar dicha tabla.
 
 📌 URL = https://www.espn.com.ar/futbol/posiciones/_/liga/arg.1
 
@@ -12,7 +12,7 @@ Dada la siguiente página, se necesita obtener la tabla de las posiciones del to
 
 * BeatufilSoup -> analizador HTML
 * Pandas -> generador de archivos .xls, .csv, etc
-* Selenium 
+* Selenium
 * openpyxl -> prerequisito para trabajar con archivos .xls
 
 📑 Resultado
@@ -45,3 +45,4 @@ Dada la siguiente página, se necesita obtener la tabla de las posiciones del to
        11                     Defensa y Justicia  13   3  3  7  15  21   -6  12
        12                      Sarmiento (Junín)  13   2  6  5  10  19   -9  12
        13                      Newell's Old Boys  13   2  5  6  14  21   -7  11
+```
