@@ -22,7 +22,7 @@ pipeline{
         stage("Second Stage - Execute Challenge 2 Stock Exchange Market"){
             steps{
                 echo "========executing Second Stage ========"
-                sh 'python challenge2.py'
+                sh 'python3.9 challenge2.py'
             }
             post{
                 always{
