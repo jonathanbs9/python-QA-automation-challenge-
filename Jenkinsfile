@@ -5,7 +5,7 @@ pipeline{
         stage("First Stage - Check Version"){
             steps{
                 echo "========executing First Stage ========"
-                sh 'python --version'
+                sh 'python3.9 --version'
             }
             post{
                 always{
