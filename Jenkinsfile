@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "any"
+        label "node"
     }
     stages{
         stage("First Stage - Check Version"){
