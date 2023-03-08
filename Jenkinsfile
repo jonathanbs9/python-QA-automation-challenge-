@@ -19,10 +19,10 @@ pipeline{
                 }
             }
         }
-        stage("Second Stage - Execute Challenge 2 Stock Exchange Market"){
+        stage("Second Stage - Get Libraries && Env"){
             steps{
                 echo "========executing Second Stage ========"
-                sh 'python3.9 challenge2.py'
+                sh 'source challengeEnv\Script\activate'
             }
             post{
                 always{
@@ -30,6 +30,23 @@ pipeline{
                 }
                 success{
                     echo "========Second Stage executed successfully========"
+                }
+                failure{
+                    echo "========A execution failed========"
+                }
+            }
+        }
+        stage("Third Stage - Execute Challenge 2 Stock Exchange Market"){
+            steps{
+                echo "========executing Third Stage ========"
+                sh 'python3.9 challenge2.py'
+            }
+            post{
+                always{
+                    echo "======== Always ========"
+                }
+                success{
+                    echo "======== Third Stage executed successfully ========"
                 }
                 failure{
                     echo "========A execution failed========"
