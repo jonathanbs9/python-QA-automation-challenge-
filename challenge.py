@@ -5,8 +5,15 @@ import pandas as pd
 # URL
 URL = 'https://www.espn.com.ar/futbol/posiciones/_/liga/arg.1'
 
+# Chrome Options
+options = webdriver.ChromeOptions()
+options.add_experimental_option('excludeSwitches', ['enable-logging'])
+
 # Instancia de Selenium Web Driver
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(
+    options=options,
+)
+
 driver.maximize_window()
 driver.get(URL)
 
