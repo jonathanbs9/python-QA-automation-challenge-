@@ -23,7 +23,7 @@ pipeline{
             steps{
                 echo "========executing Second Stage ========"
                 //sh 'source challengeEnv\Script\activate'
-                sh "source './challengeEnv/Script/activate'"
+                sh "source challengeEnv/Script/activate"
                 sh "pip install -r requirements.txt"
             }
             post{
